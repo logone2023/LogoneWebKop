@@ -1,0 +1,346 @@
+@import "tailwindcss";
+
+/* INPUT TEXT */
+.style_input_border_10 {
+  position: relative;
+  margin-bottom: 30px;
+}
+.style_input_border_10 input, .style_input_border_10 textarea {
+  width: 80%;
+  padding: 15px;
+  font-size: 14px;
+  background: var(--v_transparan);
+  color: var(--v_textinputcolor);
+  padding-left: 50px;
+  border: 1.5px solid var(--v_unfocuscolor);
+  border-radius: 10px;
+  font-weight: bold;
+  outline: none;
+  transition: border-color 0.3s;
+}
+.style_input_border_10 input:focus, .style_input_border_10 textarea:focus {
+  border: 2px solid var(--v_primarycolor);
+}
+.style_input_border_10 input:not(:-moz-placeholder-shown) + label, .style_input_border_10 textarea:not(:-moz-placeholder-shown) + label {
+  top: -10px;
+  left: 10px;
+  font-size: 12px;
+  color: var(--v_primarycolor);
+  font-weight: bold;
+}
+.style_input_border_10 input:not(:placeholder-shown) + label, .style_input_border_10 input.not-empty + label, .style_input_border_10 textarea:not(:placeholder-shown) + label, .style_input_border_10 textarea.not-empty + label {
+  top: -10px;
+  left: 10px;
+  font-size: 12px;
+  color: var(--v_primarycolor);
+  font-weight: bold;
+}
+.style_input_border_10 label {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  padding: 10px 0;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: var(--v_hintcolor);
+  pointer-events: none;
+  transition: top 0.4s, font-size 0.4s, color 0.4s;
+}
+.style_input_border_10 .icon {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--v_hintcolor);
+}
+.style_input_border_10 .icon img {
+  width: 25px;
+  height: 25px;
+}
+
+/* INPUT TEXT PASSWORD LOGIN */
+.style_input_border_10_pass {
+  position: relative;
+  margin-bottom: 30px;
+}
+.style_input_border_10_pass input, .style_input_border_10_pass textarea {
+  width: 80%;
+  padding: 15px;
+  font-size: 14px;
+  padding-left: 50px;
+  background: var(--v_transparan);
+  color: var(--v_textinputcolor);
+  border: 1.5px solid var(--v_unfocuscolor);
+  border-radius: 10px;
+  font-weight: bold;
+  outline: none;
+  transition: border-color 0.3s;
+}
+.style_input_border_10_pass input:focus, .style_input_border_10_pass textarea:focus {
+  border: 2px solid var(--v_primarycolor);
+}
+.style_input_border_10_pass input:not(:-moz-placeholder-shown) + label, .style_input_border_10_pass textarea:not(:-moz-placeholder-shown) + label {
+  top: -10px;
+  left: 10px;
+  font-size: 12px;
+  color: var(--v_primarycolor);
+  font-weight: bold;
+}
+.style_input_border_10_pass input:not(:placeholder-shown) + label, .style_input_border_10_pass input.not-empty + label, .style_input_border_10_pass textarea:not(:placeholder-shown) + label, .style_input_border_10_pass textarea.not-empty + label {
+  top: -10px;
+  left: 10px;
+  font-size: 12px;
+  color: var(--v_primarycolor);
+  font-weight: bold;
+}
+.style_input_border_10_pass label {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  padding: 10px 0;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: var(--v_hintcolor);
+  pointer-events: none;
+  transition: top 0.4s, font-size 0.4s, color 0.4s;
+}
+.style_input_border_10_pass .icon {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--v_hintcolor); /* Ubah warna ikon */
+}
+.style_input_border_10_pass .icon img {
+  width: 25px;
+  height: 25px;
+}
+.style_input_border_10_pass .toggle_password {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.style_input_border_10_pass .toggle_password img {
+  width: 25px;
+  height: 25px;
+}
+
+/* INPUT TEXT PASSWORD POPUP */
+.style_input_border_10_pass_dlg {
+  position: relative;
+  margin-bottom: 30px;
+}
+.style_input_border_10_pass_dlg input, .style_input_border_10_pass_dlg textarea {
+  width: 80%;
+  padding: 15px;
+  font-size: 14px;
+  padding-left: 50px;
+  background: var(--v_transparan);
+  color: black;
+  border: 1.5px solid var(--v_unfocuscolor);
+  border-radius: 10px;
+  font-weight: bold;
+  outline: none;
+  transition: border-color 0.3s;
+}
+.style_input_border_10_pass_dlg input:focus, .style_input_border_10_pass_dlg textarea:focus {
+  border: 2px solid var(--v_primarycolor);
+}
+.style_input_border_10_pass_dlg input:not(:-moz-placeholder-shown) + label, .style_input_border_10_pass_dlg textarea:not(:-moz-placeholder-shown) + label {
+  top: -10px;
+  left: 10px;
+  font-size: 12px;
+  color: var(--v_primarycolor);
+  font-weight: bold;
+}
+.style_input_border_10_pass_dlg input:not(:placeholder-shown) + label, .style_input_border_10_pass_dlg input.not-empty + label, .style_input_border_10_pass_dlg textarea:not(:placeholder-shown) + label, .style_input_border_10_pass_dlg textarea.not-empty + label {
+  top: -10px;
+  left: 10px;
+  font-size: 12px;
+  color: var(--v_primarycolor);
+  font-weight: bold;
+}
+.style_input_border_10_pass_dlg label {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  padding: 10px 0;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: black;
+  pointer-events: none;
+  transition: top 0.4s, font-size 0.4s, color 0.4s;
+}
+.style_input_border_10_pass_dlg .icon {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--v_hintcolor); /* Ubah warna ikon */
+}
+.style_input_border_10_pass_dlg .icon img {
+  width: 25px;
+  height: 25px;
+}
+.style_input_border_10_pass_dlg .toggle_password {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.style_input_border_10_pass_dlg .toggle_password img {
+  width: 25px;
+  height: 25px;
+}
+
+.style_input_bottom {
+  position: relative;
+}
+.style_input_bottom input, .style_input_bottom textarea {
+  width: 100%;
+  padding: 15px;
+  font-size: 14px;
+  padding-left: 50px;
+  border: none;
+  background: var(--v_transparan);
+  color: black;
+  border-bottom: 1.5px solid var(--v_unfocuscolor);
+  font-weight: bold;
+  transition: border-color 0.3s;
+}
+.style_input_bottom input:focus, .style_input_bottom textarea:focus {
+  border: none;
+  border-bottom: 2px solid var(--v_primarycolor);
+}
+.style_input_bottom input:not(:-moz-placeholder-shown) + label, .style_input_bottom textarea:not(:-moz-placeholder-shown) + label {
+  top: -10px;
+  left: 10px;
+  font-size: 12px;
+  color: var(--v_primarycolor);
+  font-weight: bold;
+}
+.style_input_bottom input:not(:placeholder-shown) + label, .style_input_bottom input.not-empty + label, .style_input_bottom textarea:not(:placeholder-shown) + label, .style_input_bottom textarea.not-empty + label {
+  top: -10px;
+  left: 10px;
+  font-size: 12px;
+  color: var(--v_primarycolor);
+  font-weight: bold;
+}
+.style_input_bottom input:not(.icon), .style_input_bottom textarea:not(.icon) {
+  padding-left: 10px;
+  padding-right: 20px;
+  width: 98%;
+}
+.style_input_bottom label {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  padding: 10px 0;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: var(--v_hintcolor);
+  pointer-events: none;
+  transition: top 0.4s, font-size 0.4s, color 0.4s;
+}
+.style_input_bottom label:not(.icon) {
+  left: 10px;
+}
+.style_input_bottom info {
+  position: absolute;
+  top: calc(100% + 3px); /* Atur jarak dari input */
+  left: 0;
+  width: 100%;
+  font-size: 12px;
+  color: var(--v_textinputcolor);
+}
+.style_input_bottom .icon {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--v_hintcolor); /* Ubah warna ikon */
+}
+.style_input_bottom .icon img {
+  width: 25px;
+  height: 25px;
+}
+.style_input_bottom + * {
+  margin-top: 30px;
+}
+
+.style_input_bottom_pass {
+  position: relative;
+  margin-bottom: 30px;
+}
+.style_input_bottom_pass input, .style_input_bottom_pass textarea {
+  width: 80%;
+  padding: 15px;
+  font-size: 14px;
+  padding-left: 50px;
+  border: none;
+  background: var(--v_transparan);
+  color: var(--v_textinputcolor);
+  border-bottom: 1.5px solid var(--v_unfocuscolor);
+  font-weight: bold;
+  outline: none;
+  transition: border-color 0.3s;
+}
+.style_input_bottom_pass input:focus, .style_input_bottom_pass textarea:focus {
+  border: none;
+  border-bottom: 2px solid var(--v_primarycolor);
+}
+.style_input_bottom_pass input:not(:-moz-placeholder-shown) + label, .style_input_bottom_pass textarea:not(:-moz-placeholder-shown) + label {
+  top: -10px;
+  left: 10px;
+  font-size: 12px;
+  color: var(--v_primarycolor);
+  font-weight: bold;
+}
+.style_input_bottom_pass input:not(:placeholder-shown) + label, .style_input_bottom_pass input.not-empty + label, .style_input_bottom_pass textarea:not(:placeholder-shown) + label, .style_input_bottom_pass textarea.not-empty + label {
+  top: -10px;
+  left: 10px;
+  font-size: 12px;
+  color: var(--v_primarycolor);
+  font-weight: bold;
+}
+.style_input_bottom_pass label {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  padding: 10px 0;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: var(--v_hintcolor);
+  pointer-events: none;
+  transition: top 0.4s, font-size 0.4s, color 0.4s;
+}
+.style_input_bottom_pass .icon {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--v_hintcolor); /* Ubah warna ikon */
+}
+.style_input_bottom_pass .icon img {
+  width: 25px;
+  height: 25px;
+}
+.style_input_bottom_pass .toggle_password {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.style_input_bottom_pass .toggle_password img {
+  width: 25px;
+  height: 25px;
+}
+
+input[et_type=NUMBER],
+input[et_type^=DECIMAL] {
+  text-align: right;
+}/*# sourceMappingURL=input.css.map */

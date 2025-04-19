@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+:root {
+    /*Public Variable Release System (Setup Default System)*/
+    --v_urlapi              : http://103.121.213.173/api/;
+    --v_systemtype          : ERP;
+    --v_systemkey           : HRD;
+    --v_systemname          : NAMA SYSTEM;
+    --v_systemcode          : LOGONE;
+    --v_systemname          : LogOne;
+    --v_versionname         : L1ERP v.0.0.0;
+    --v_releasedate         : 2024-05-01 00:00:01;
+    --v_versionnumber       : 0;
+
+    /*Variable Color*/
+    --v_primarycolor       : #215CF3;
+    --v_primarydarkcolor   : #3700B3;
+    --v_secondarycolor     : #6c757d;
+    --v_unfocuscolor       : #CCCCCC;
+    --v_hintcolor          : #f8f4f4;
+    --v_labelcolor         : #215CF3;
+    --v_textinputcolor     : #000;
+    --v_textbutton1color   : #FFFFFF;
+    --v_textbutton2color   : #88b937;
+    --v_textformcolor      : #FFFFFF;
+    --v_darktransparan     : rgba(0.1, 0.1, 0.1, 0.1);
+    --v_transparan         : rgba(255, 255, 255, 0.1);
+
+
+
+
+
+    /* <color name="colorPrimary">#215CF3</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorTextButton">#FFFFFF</color>
+    <color name="colorText">#000000</color>
+    <color name="colorline">#CCCCCC</color> */
+}

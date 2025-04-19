@@ -1,0 +1,549 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* STYLE CSS ELEMENT */
+header {
+  height: 70px;
+  width: 100vw;
+  padding: 0 30px;
+  background-color: var(--background-color1);
+  z-index: 100;
+  box-shadow: 1px 1px 15px rgba(161, 182, 253, 0.825);
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 200px;
+  text-align: center;
+  color: black;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+input {
+  outline: none;
+  background: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.5s ease;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+input[type=submit].login {
+  background-color: var(--v_textbutton2color);
+  color: var(--v_textbutton1color);
+  width: 100%;
+  padding: 10px 20px;
+  display: block;
+  height: 45px;
+  border-radius: 30px;
+  margin-top: 15px;
+  transition: all 0.5s ease-in-out;
+  border: none;
+  font-weight: bold;
+  font-size: 15px;
+  float: initial;
+}
+
+input[type=submit].login:hover {
+  background-color: var(--v_textbutton1color);
+  border: 1px solid var(--v_textbutton2color);
+  color: var(--v_textbutton2color);
+  cursor: pointer;
+}
+
+input[type=submit].login:focus {
+  outline: none;
+}
+
+/* STYLE CSS GLOBAL */
+.logoSystem {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.backgroundLogin {
+  background: url(/public/asset/img/bgweb.jpg) no-repeat center center;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  font-style: "montserrat";
+  height: 100vh;
+}
+
+.right_header,
+.left_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right_header {
+  margin-right: 30px;
+  gap: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.left_header {
+  margin-left: 30px;
+}
+
+.theme_frame1 {
+  position: flex;
+  padding: 40px;
+  margin: 40px;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  border: 1.5px solid #e1e1e1;
+}
+
+/* Jika layar lebih besar dari 768px (layar lebar seperti desktop) */
+@media (min-width: 768px) {
+  .theme_frame1 {
+    width: 400px;
+  }
+}
+
+/* Jika layar lebih kecil dari 768px (layar kecil seperti HP) */
+@media (max-width: 768px) {
+  .theme_frame1 {
+    width: auto;
+    /* Tidak ada width */
+  }
+}
+
+.center_main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main {
+  height: calc(100vh - 70px);
+  width: 100%;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.icon {
+  height: 30px;
+}
+
+.pointer_icon {
+  cursor: pointer;
+}
+
+.nama_menu {
+  margin-left: 16px;
+  display: flex;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  font-size: x-large;
+  color: var(--v_secondarycolor);
+}
+
+.circle {
+  height: 7px;
+  width: 7px;
+  position: absolute;
+  background-color: #fa7bb4;
+  border-radius: 50%;
+  left: 19px;
+  top: 8px;
+}
+
+.dp {
+  height: 40px;
+  width: 40px;
+  background-color: #626262;
+  border-radius: 50%;
+  display: flex;
+  margin-left: 30px;
+  margin-right: 14px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.dpicn {
+  height: 42px;
+}
+
+.main-container {
+  display: flex;
+  width: 100vw;
+  position: relative;
+  top: 70px;
+  z-index: 1;
+}
+
+.systemname {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.btn_r30 {
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--v_textformcolor);
+  background-color: var(--v_textbutton2color);
+  text-align: center;
+  align-items: center;
+  padding: 15px 20px;
+  text-transform: none;
+  width: 88%;
+  text-decoration: none;
+  display: block;
+  border-radius: 30px;
+  margin-left: 50%;
+  margin-top: 15px;
+  transform: translateX(-50%);
+  transition: all 0.5s ease-in-out;
+}
+
+.btn_r30:hover {
+  background-color: var(--v_textbutton1color);
+  border: 1px solid var(--v_textbutton2color);
+  color: var(--v_textbutton2color);
+  cursor: pointer;
+}
+
+.btn_r30:focus {
+  outline: none;
+}
+
+.headerMenu {
+  display: flex;
+  height: min-content;
+  background-color: var(--v_textbutton2color);
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.headerMenu img {
+  margin-inline-start: 16px;
+  margin-block: 10px;
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.headerMenu h1 {
+  font-size: 24px;
+  margin: 12px 12px;
+  font-weight: bold;
+  color: white;
+}
+
+.kodeOTP {
+  caret-color: transparent;
+  font-size: 75px;
+  border-radius: 10px;
+  height: 120px;
+  width: 100px;
+  border: 1px solid var(--v_textbutton2color);
+  margin: 4px;
+  text-align: center;
+}
+
+.kodeOTP::-webkit-inner-spin-button,
+.kodeOTP::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.kodeOTP:valid {
+  border-color: var(--v_textbutton2color);
+  box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.25);
+}
+
+/* STYLE CSS KHUSUS PADA ID HTML */
+#system-name {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  color: var(--v_textinputcolor);
+}
+
+#logoSystem {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+#SETPASS_CL_OTP {
+  text-align: center;
+  align-items: center;
+}
+
+#LOGIN_CL_FORM {
+  margin-top: 40px;
+}
+
+#LOGIN_TV_VERSION {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 20px;
+  display: flex;
+  color: antiquewhite;
+  justify-content: flex-end;
+}
+
+#LOGIN_BTN_LUPAPASS {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+#LOGIN_BTN_LUPAPASS:hover {
+  text-decoration: underline;
+}
+
+/* Dialog Helper */
+.dlg_text {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* Background transparan */
+  display: none;
+  /* Default tidak terlihat */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.dlg_text_content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dlg_text_gif {
+  width: 300px;
+  height: 300px;
+}
+
+#dlg_text_button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#dlg_text_button:hover {
+  background: #0056b3;
+}
+
+
+.popup {
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s;
+}
+
+.dlg_content {
+  width: 50%;
+  background-color: aliceblue;
+  box-shadow: 0 20px 40px var(--v_darktransparan);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%) scale(.25);
+  opacity: 0;
+  transition: all .5s .1s;
+}
+
+.dlg_header,
+.dlg_username .info_username,
+.dlg_change_pass {
+  font-style: "montserrat";
+  display: flex;
+  align-items: start;
+  padding: 12px 2px 0px 12px;
+}
+
+.info_username h2 {
+  font-size: 24px;
+  margin: 12px 12px 0px 12px;
+  font-weight: bold;
+  color: var(--v_secondarycolor);
+}
+
+.info_username h3 {
+  font-size: 20px;
+  margin: 14px 0px 0px 12px;
+  font-weight: bold;
+  color: var(--v_secondarycolor);
+}
+
+.info_username h4 {
+  font-size: 18px;
+  margin: 10px 0px 0px 12px;
+  font-weight: bold;
+  color: var(--v_secondarycolor);
+}
+
+.info_username img {
+  margin: 12px 0px 0px 12px;
+}
+
+.dlg_header img {
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.dlg_header h1 {
+  font-size: 20px;
+  margin: 12px 12px 12px 8px;
+  font-weight: bold;
+  color: var(--v_textbutton2color);
+}
+
+.ic_dlg_infouser {
+  margin: 12px 0px 0px 12px;
+  width: 65px;
+}
+
+.dlg_change_pass {
+  display: block;
+  flex-direction: column;
+  background-color: aliceblue;
+  justify-self: center;
+}
+
+.dlg_text {
+  font-weight: 550;
+  color: var(--v_secondarycolor);
+  text-align: center;
+  align-items: center;
+  padding: 14px;
+}
+
+.dlg_btn {
+  font-weight: 550;
+  color: var(--v_textformcolor);
+  background-color: var(--v_textbutton2color);
+  text-align: center;
+  align-items: center;
+  padding: 14px 28px;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  border-radius: 30px;
+  margin-left: 50%;
+  margin-bottom: 15px;
+  transform: translateX(-50%);
+  transition: all 0.5s ease-in-out;
+  border: none;
+}
+
+.dlg_btn:hover {
+  background-color: var(--v_textbutton1color);
+  border: 1px solid var(--v_textbutton2color);
+  color: var(--v_textbutton2color);
+  cursor: pointer;
+}
+
+.dlg_btn:focus {
+  outline: none;
+}
+
+#DLG_LUPAPASSWORD:target,
+#DLG_GANTIPASS:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+#DLG_LUPAPASSWORD:target .dlg_content,
+#DLG_GANTIPASS:target .dlg_content {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.close_dlg:link,
+.close_dlg:visited {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  text-decoration: none;
+  color: var(--v_textbutton2color);
+  font-size: 30px;
+  display: inline-block;
+  line-height: 1;
+  transition: all .3s;
+}
+
+.close_dlg:hover,
+.close_dlg:active {
+  color: black;
+}

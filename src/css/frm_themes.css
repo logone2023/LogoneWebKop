@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+/* Container untuk ListView */
+#list-view-container {
+    display: flex;
+    flex-direction: column;
+    /* Elemen disusun ke bawah */
+    gap: 15px;
+    /* Jarak antar elemen */
+    margin: 20px;
+    padding: 10px;
+}
+
+/* Style untuk Dropdown (LOV) */
+.lov {
+    background: var(--v_transparan);
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style untuk Input Text (ET) */
+.style_border_10 {
+    background: var(--v_transparan);
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid var(--v_unfocuscolor);
+    border-radius: 5px;
+}
+
+/* Style untuk Gambar (IMG) */
+.image {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* Style untuk Lis
+  
