@@ -18,7 +18,7 @@ export default function LoginPage() {
     maskedPhone,
   } = useLogin(); // Panggil hook useLogin
 
-  const bg = systemInfo?.background || "/public/asset/img/bgweb.jpg";
+  const bg = systemInfo?.background || "/asset/img/bgweb.jpg";
 
   return (
     <>
@@ -33,7 +33,7 @@ export default function LoginPage() {
             <img
               id="logoSystem"
               alt="System Logo"
-              src={systemInfo.logo || "/assets/img/defaultlogo.png"}
+              src={systemInfo.logo || "/asset/img/defaultlogo.png"}
             />
             <div className="systemname" id="system-name">
               {systemInfo.name || "System Name"}
@@ -83,7 +83,7 @@ export default function LoginPage() {
               <div className="dlg_header">
                 <img
                   id="DLG_LUPAPASSWORD_IMG_LOGO"
-                  src={systemInfo.logo || "/assets/img/defaultlogo.png"}
+                  src={systemInfo.logo || "/asset/img/defaultlogo.png"}
                   alt="System Logo"
                 />
                 <h1 id="DLG_LUPAPASSWORD_TV_SYSTEMNAME">{systemInfo.name}</h1>

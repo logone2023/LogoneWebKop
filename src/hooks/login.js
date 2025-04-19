@@ -56,6 +56,33 @@ export default function useLogin() {
         flag.v_status_dlg = "OFF";
       }
     );
+
+    // apihelper.push_get_api(
+    //   "SYSTEM",
+    //   `${v_systemkey},${getdatenow("fdatetime_data")}`,
+    //   `${v_systemkey},DEVLOGONE02,F9841EC31073E123AC59880A46CB0FBB`,
+    //   (responseAPI) => {
+    //     if (!Array.isArray(responseAPI) || responseAPI.length === 0) {
+    //       showDialogInfo("FAIL", "Gagal memuat system, harap coba lagi.");
+    //       return;
+    //     }
+    //     const data = responseAPI[0];
+    //     const splitdata = data.TDATA ? data.TDATA.split("#,#") : [];
+    //     const name = splitdata[1] || "Default System Name";
+    //     const version = splitdata[17] || v_versionName;
+    //     const logo = data.TBLOB1
+    //       ? `data:image/png;base64,${data.TBLOB1}`
+    //       : null;
+    //     const background = data.TBLOB2
+    //       ? `data:image/jpeg;base64,${data.TBLOB2}`
+    //       : null;
+
+    //     setSystemInfo({ name, version, logo, background });
+    //     saveCookie("v_systemname", name, 1);
+    //     saveCookie("v_versionname", version, 1);
+    //     flag.v_status_dlg = "OFF";
+    //   }
+    // );
   }, []);
 
   const _clickLogin = () => {
